@@ -1,0 +1,17 @@
+<config>
+  <!-- CDS Credentials -->
+  <cds_credentials username='fakeuser17' password='fakeuserpassword' />
+
+  <!-- Node WebService URL -->
+  <node_webservice>https://db2-stage.grnoc.iu.edu/cds2/node.cgi</node_webservice>
+
+  <!-- Network -->
+  <network id='14' />
+
+  <!-- Nodes roles to run on -->
+  <node-roles>
+    <node-role value='rtr' />
+    <node-role value='sw' />
+  </node-roles>
+
+</config>
