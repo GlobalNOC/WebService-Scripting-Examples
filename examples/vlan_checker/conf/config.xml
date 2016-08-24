@@ -1,0 +1,8 @@
+<config>
+  <!-- CDS Credentials -->
+  <cds_credentials username='' password='' />
+
+  <!-- Network -->
+  <network id='14' />
+
+</config>
