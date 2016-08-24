@@ -46,6 +46,8 @@ my $ckt_type_id = $result->{'circuit_type_id'};
 my $vlans = $websvc->get_circuits( 
     circuit_type_id => $ckt_type_id,
     network_id => $network_id,
+    circuit_role_id => [67,68,116],
+    circuit_role_id_logic => 'AND',
     status => 'active'
     )->{'results'};
 
@@ -98,6 +100,7 @@ foreach my $interface (@$interfaces){
         foreach my $ckt (@$ckts){
             $email_str .= "$ckt\n";
         }
+        $email_str .= "\n";
     }
 }
 
