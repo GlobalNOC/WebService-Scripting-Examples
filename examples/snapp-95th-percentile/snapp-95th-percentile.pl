@@ -148,6 +148,13 @@ sub format_number {
 
 sub webservice_error {
     my $websvc = shift;
+    my $error  = shift;
 
-    die($websvc->get_error());
+    if ($websvc->get_error()){
+	die "Client error: " . $websvc->get_error();
+    }
+    else {
+	die "Error: " . Dumper($error);
+    }
+
 }
